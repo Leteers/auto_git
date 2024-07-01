@@ -17,7 +17,7 @@ if __name__ == '__main__':
         r_number = random.randrange(2,8)
         for i in range(r_number):
             with open('text.txt', 'w') as f:
-                f.write(random.randrange(0,10000))
-                f.write(random.randrange(0,10000))
+                f.write(str(random.randrange(0,10000)))
+                f.write(str(random.randrange(0,10000)))
             git_push(f'{i}/{r_number}')
             time.sleep((24*60*60)/r_number)
